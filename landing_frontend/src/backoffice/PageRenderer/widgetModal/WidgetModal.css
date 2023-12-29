@@ -1,0 +1,6 @@
+.landing-widget-modal{
+    position: absolute;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

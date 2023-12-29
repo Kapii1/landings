@@ -1,0 +1,31 @@
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+  }
+.preview{
+    border: 1px solid black;
+}
+.one-layout{
+    display: flex;
+    min-height: 100px;
+}
+.div-layout{
+    flex: 1;
+    transition: opacity 0.3s ease;
+    background: linear-gradient(to bottom, var(--myColor1), var(--myColor2)); /* Your gradient colors */
+    transition: --myColor1 0.3s, --myColor2 .3s;
+
+}
+
+.div-layout:hover{
+    cursor: pointer;
+  --myColor1: #62c0ff63;
+  --myColor2:  #2b7cce;
+}
